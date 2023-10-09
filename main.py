@@ -12,7 +12,7 @@ logging.basicConfig(level=logging.INFO)
 def get_search_results_count(term, proxy, max_retries=3):
 	# Prepare the proxy
 	chrome_options = Options()
-	# chrome_options.add_argument("--headless")
+	chrome_options.add_argument("--headless")
 	chrome_options.add_argument("--log-level=3")  # Suppress logging
 	chrome_options.add_argument("--disable-logging")  # Suppress logging
 	chrome_options.add_argument('--ignore-certificate-errors')
